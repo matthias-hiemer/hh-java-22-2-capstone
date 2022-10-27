@@ -35,4 +35,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}    # Secret needs to be created in GitHub
         # Change projectKey to name of SonarCloud Project!
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=matthias-hiemer_hh-java-22-2-capstone-backend --file backend/pom.xml
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=matthias-hiemer_hh-java-22-2-capstone_backend --file backend/pom.xml
